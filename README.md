@@ -107,7 +107,7 @@ platforms:
   feishu:
     enabled: false
 
-  # 启���自定义渠道
+  # 启用自定义渠道
   feishu_custom:
     enabled: true
 ```
