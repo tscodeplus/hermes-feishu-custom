@@ -1,0 +1,50 @@
+name: feishu-custom-platform
+label: Feishu Custom (Interactive Cards)
+kind: platform
+version: 0.1.0
+description: >
+  Custom Feishu gateway adapter with interactive card support.
+  Sends agent replies as Feishu interactive cards (msg_type=interactive)
+  with streaming content updates via message edit.
+  Reuses the same credentials (FEISHU_APP_ID / FEISHU_APP_SECRET) as the
+  built-in feishu adapter — ensure the built-in feishu is disabled in
+  config.yaml when this plugin is enabled.
+author: Custom
+requires_env:
+  - name: FEISHU_APP_ID
+    description: "Feishu App ID"
+    prompt: "Feishu App ID"
+    password: false
+  - name: FEISHU_APP_SECRET
+    description: "Feishu App Secret"
+    prompt: "Feishu App Secret"
+    password: true
+optional_env:
+  - name: FEISHU_VERIFICATION_TOKEN
+    description: "Event subscription Verify Token"
+    prompt: "Verify Token (or leave empty)"
+    password: false
+  - name: FEISHU_ENCRYPT_KEY
+    description: "Event subscription Encrypt Key"
+    prompt: "Encrypt Key (or leave empty)"
+    password: true
+  - name: FEISHU_BOT_OPEN_ID
+    description: "Bot Open ID (auto-detected from /bot/v3/info if empty)"
+    prompt: "Bot Open ID (or leave empty)"
+    password: false
+  - name: FEISHU_BOT_USER_ID
+    description: "Bot User ID (auto-detected from /bot/v3/info if empty)"
+    prompt: "Bot User ID (or leave empty)"
+    password: false
+  - name: FEISHU_BOT_NAME
+    description: "Bot display name"
+    prompt: "Bot Name (or leave empty)"
+    password: false
+  - name: FEISHU_CUSTOM_LARK_HOST
+    description: "Lark API host (default: https://open.feishu.cn)"
+    prompt: "Lark API host (or leave empty)"
+    password: false
+  - name: FEISHU_CUSTOM_MAX_MESSAGE_LENGTH
+    description: "Max message length before chunking (default: 15000)"
+    prompt: "Max message length (or leave empty)"
+    password: false
