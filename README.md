@@ -67,7 +67,7 @@ FeishuCustomAdapter
 
 ```bash
 cd ~/.hermes/plugins/platforms/
-git clone https://github.com/YOUR_USERNAME/hermes-feishu-custom.git feishu_custom
+git clone https://github.com/tscodeplus/hermes-feishu-custom.git feishu_custom
 ```
 
 ### 2. 安装依赖

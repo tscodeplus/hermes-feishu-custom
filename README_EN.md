@@ -1,4 +1,4 @@
-# Hermes Custom Feishu
+# Hermes Custom Feishu — CardKit 2.0 Streaming Interactive Card Adapter
 
 [中文](README.md)
 
@@ -67,7 +67,7 @@ Key technical details:
 
 ```bash
 cd ~/.hermes/plugins/platforms/
-git clone https://github.com/YOUR_USERNAME/hermes-feishu-custom.git feishu_custom
+git clone https://github.com/tscodeplus/hermes-feishu-custom.git feishu_custom
 ```
 
 ### 2. Install Dependencies
